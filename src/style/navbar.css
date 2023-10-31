@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+.nav-top {
+  font-family: Montserrat;
+  display: flex;
+  background-color: white;
+  height: 64px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  color: white;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  width: 629px;
+  height: 40px;
+  background-color: #f9fafb;
+  justify-content: space-between;
+  margin-left: 20px;
+  border-radius: 5px;
+}
+
+.search-bar input {
+  font-family: Montserrat;
+  margin-right: 10px;
+  padding: 5px;
+  width: 629px;
+  border: none; /* Remove the border */
+  outline: none;
+  background-color: transparent;
+  font-size: 15px;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+}
+.profile-icon {
+  width: 40px; /* Set the width and height for a decent-sized circle */
+  height: 40px;
+  border: none; /* Remove the border */
+  border-radius: 50%; /* Make it a circle */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%; /* Ensure the image is a circle */
+  object-fit: cover; /* Maintain aspect ratio and cover the circle */
+}
+
+.notification-icon {
+  width: 40px; /* Set the width and height for a decent-sized circle */
+  height: 40px;
+  border: none; /* Remove the border */
+  border-radius: 50%; /* Make it a circle */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  border: 1px solid grey;
+}

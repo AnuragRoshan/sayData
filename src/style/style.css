@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+.home-top {
+  display: flex;
+
+  font-family: Montserrat;
+}
+.sidebar {
+  width: 272px;
+  padding: 24px;
+  height: 100vh;
+  justify-content: space-between;
+  background-color: white;
+}
+
+.sidebar-top {
+  /* height: max-content; */
+  /* width: 224px; */
+  gap: 32px;
+}
+
+.logo {
+  display: flex;
+  align-items: center; /* Center vertically */
+}
+.logoText {
+  padding: 20px; /* Adjust the padding as needed */
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 20px;
+  color: #0048ad;
+}
+.sidebar-body {
+  height: 355px;
+}
+.sideMenu-item {
+  height: 40px;
+  gap: 8px;
+  /* border: 1px solid grey; */
+  align-items: center; /* Center vertically */
+  border-radius: 5px;
+  font-weight: 500;
+  transition: 100ms;
+  font-size: medium;
+  display: flex; /* Use flex container for vertical centering */
+}
+.sidebar-inner-body {
+  margin-inline: 10px;
+  margin-block-start: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+}
+.menu-item {
+  height: 40px;
+  gap: 8px;
+  align-items: center; /* Center vertically */
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: medium;
+
+  display: flex; /* Use flex container for vertical centering */
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    transparent 50%,
+    #e0edff 50%,
+    #e0edff 100%
+  );
+  background-size: 100% 200%;
+  background-position: 0 0;
+  transition: background-position 0.3s;
+  cursor: pointer;
+  padding-inline: 10px;
+}
+
+.menu-item:hover {
+  background-position: 0 100%;
+}
+
+.sidebar-bottom {
+  display: flex; /* Use flex container for horizontal centering */
+  background-color: #e0edff;
+  flex-direction: column;
+  justify-content: flex-start; /* Start from the top */
+  align-items: flex-start; /* Align items to the top */
+  align-items: center; /* Center items vertically */
+  height: 190px;
+  border-radius: 10px;
+}
+
+.sidebar-bottom-logo {
+  margin-top: 15px;
+}
+.sidebar-bottom-title {
+  margin-top: 15px;
+  font-weight: 600;
+  font-size: 14px;
+}
+.sidebar-bottom-description {
+  margin-top: 15px;
+  font-size: 12px;
+  color: #475367;
+  text-align: center;
+}
+.sidebar-bottom-upgrade {
+  margin-top: 15px;
+  width: 152px;
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  height: 47px;
+  text-align: center; /* Center text horizontally within the element */
+  background-color: #0048ad;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.recent-files-table input[type="radio"] {
+  width: 18px; /* Make it square */
+  height: 18px; /* Make it square */
+  padding: 14px 16px;
+  gap: 10px;
+  cursor: pointer;
+  background-color: #ffffff; /* Set the background color to neutral */
+}
