@@ -20,15 +20,15 @@ const Navbar = () => {
         {/* Magnifying glass icon */}
       </div>
       <div className="icons">
+        <div className="notification-icon">
+          <span class="material-symbols-outlined">notifications</span>
+        </div>
         <div className="profile-icon">
           <img
-            src="https://xsgames.co/randomusers/avatar.php?g=male"
+            src="https://anuragroshan.github.io/mycv/img/about.png"
             alt="Profile"
             className="profile-image"
           />
-        </div>
-        <div className="notification-icon">
-          <span class="material-symbols-outlined">notifications</span>
         </div>
       </div>
     </div>

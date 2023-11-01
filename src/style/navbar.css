@@ -50,8 +50,8 @@
 }
 
 .profile-image {
-  width: 100%;
-  height: 100%;
+  width: 140%;
+  height: 140%;
   border-radius: 50%; /* Ensure the image is a circle */
   object-fit: cover; /* Maintain aspect ratio and cover the circle */
 }
@@ -69,4 +69,5 @@
   font-size: 18px;
   cursor: pointer;
   border: 1px solid grey;
+  margin-right: 25px;
 }
