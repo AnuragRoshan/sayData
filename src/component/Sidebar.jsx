@@ -6,7 +6,7 @@ const Sidebar = () => {
     <div className="sidebar">
       <div className="sidebar-top">
         <div className="logo">
-          <div className="logoText">abc firm</div>
+          <div className="logoText">Verbalyze</div>
         </div>
         <div className="sidebar-body">
           <div className="sidebar-inner-body">

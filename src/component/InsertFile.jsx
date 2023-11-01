@@ -34,28 +34,21 @@ const InsertFile = ({ name }) => {
     setIsOpen(true);
   }
 
-  function afterOpenModal() {
-    // references are now sync'd and can be accessed.
-    // subtitle.style.color = '#f00';
-  }
+  function afterOpenModal() {}
 
   function closeModal() {
     setIsOpen(false);
   }
 
-  // Event handler for file input change
   const handleFileChange = (event) => {
     const file = event.target.files[0];
     setSelectedFile(file);
 
     if (file) {
-      // Get the size of the file
       const fileSize = file.size;
 
-      // Display the file size
       console.log("File Size: " + fileSize + " bytes");
 
-      // You can also convert the size to a more human-readable format (e.g., kilobytes or megabytes)
       const fileSizeKB = (fileSize / 1024).toFixed(2); // Convert bytes to kilobytes
       const fileSizeMB = (fileSizeKB / 1024).toFixed(2); // Convert kilobytes to megabytes
 
@@ -115,10 +108,18 @@ const InsertFile = ({ name }) => {
                     className="modal-dropdown"
                     onChange={handleOptionChange}
                   >
-                    <option value="English">English</option>
-                    <option value="Spanish">Spanish</option>
-                    <option value="German">German </option>
-                    <option value="French">French</option>
+                    <option className="insert-option" value="English">
+                      English
+                    </option>
+                    <option className="insert-option" value="Spanish">
+                      Spanish
+                    </option>
+                    <option className="insert-option" value="German">
+                      German{" "}
+                    </option>
+                    <option className="insert-option" value="French">
+                      French
+                    </option>
                   </select>
                 </div>
                 <div className="modal-upload">

@@ -14,17 +14,15 @@
 }
 
 .sidebar-top {
-  /* height: max-content; */
-  /* width: 224px; */
   gap: 32px;
 }
 
 .logo {
   display: flex;
-  align-items: center; /* Center vertically */
+  align-items: center;
 }
 .logoText {
-  padding: 20px; /* Adjust the padding as needed */
+  padding: 20px;
   font-weight: 700;
   font-size: 24px;
   line-height: 20px;
@@ -36,13 +34,12 @@
 .sideMenu-item {
   height: 40px;
   gap: 8px;
-  /* border: 1px solid grey; */
-  align-items: center; /* Center vertically */
+  align-items: center;
   border-radius: 5px;
   font-weight: 500;
   transition: 100ms;
   font-size: medium;
-  display: flex; /* Use flex container for vertical centering */
+  display: flex;
 }
 .sidebar-inner-body {
   margin-inline: 10px;
@@ -50,17 +47,16 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-items: center; */
 }
 .menu-item {
   height: 40px;
   gap: 8px;
-  align-items: center; /* Center vertically */
+  align-items: center;
   border-radius: 5px;
   font-weight: 500;
   font-size: medium;
 
-  display: flex; /* Use flex container for vertical centering */
+  display: flex;
   background: linear-gradient(
     to bottom,
     transparent 0%,
@@ -80,12 +76,12 @@
 }
 
 .sidebar-bottom {
-  display: flex; /* Use flex container for horizontal centering */
+  display: flex;
   background-color: #e0edff;
   flex-direction: column;
-  justify-content: flex-start; /* Start from the top */
-  align-items: flex-start; /* Align items to the top */
-  align-items: center; /* Center items vertically */
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-items: center;
   height: 190px;
   border-radius: 10px;
 }
@@ -108,10 +104,10 @@
   margin-top: 15px;
   width: 152px;
   display: flex;
-  justify-content: center; /* Center items horizontally */
-  align-items: center; /* Center items vertically */
+  justify-content: center;
+  align-items: center;
   height: 47px;
-  text-align: center; /* Center text horizontally within the element */
+  text-align: center;
   background-color: #0048ad;
   color: white;
   border-radius: 10px;
@@ -119,10 +115,10 @@
 }
 
 .recent-files-table input[type="radio"] {
-  width: 18px; /* Make it square */
-  height: 18px; /* Make it square */
+  width: 18px;
+  height: 18px;
   padding: 14px 16px;
   gap: 10px;
   cursor: pointer;
-  background-color: #ffffff; /* Set the background color to neutral */
+  background-color: #ffffff;
 }

@@ -15,6 +15,9 @@
 .right-content {
   text-align: right;
 }
+.insert-option {
+  padding: 63px;
+}
 
 .welcome {
   font-size: 24px;
@@ -55,7 +58,7 @@
 
 .details-transcribed {
   /* flex: 1; */
-  margin-right: 10px; /* Add margin to create space */
+  margin-right: 10px;
   border: solid 1px #e4e7ec;
   border-radius: 5px;
   background: white;
@@ -67,7 +70,7 @@
 .details-upload {
   /* flex: 1; */
   padding: 10px;
-  margin-right: 10px; /* Add margin to create space */
+  margin-right: 10px;
   border: solid 1px #e4e7ec;
   background: white;
   width: 354.67px;
@@ -123,41 +126,40 @@
 }
 .horizontal-line {
   width: 100%;
-  border-top: 1px solid #000; /* Adjust the color and thickness as needed */
+  border-top: 1px solid #000;
 }
 .recent-line {
   padding-inline: 36px;
   padding-block: 18px;
 }
 .recent-table-container {
-  margin: 0 36px; /* 36px margin on the left and right */
+  margin: 0 36px;
 }
 
 .recent-files-table {
   width: 100%;
-  border-collapse: collapse; /* Remove cell spacing and borders */
+  border-collapse: collapse;
 }
 
 .recent-files-table th,
 .recent-files-table td {
-  border: none; /* Remove borders on table cells */
-  text-align: left; /* Set the text alignment to left */
+  border: none;
+  text-align: left;
   padding: 10px;
 }
 
 .recent-files-table tbody tr:hover {
   cursor: pointer;
   border-radius: 110px;
-  background-color: #e0edff; /* Change to the desired background color on hover */
-  /* Change the text color on hover */
+  background-color: #e0edff;
 }
 .recent-files-table tbody tr {
-  border-bottom: 1px solid #ccc; /* Add a horizontal line between table rows */
+  border-bottom: 1px solid #ccc;
 }
 .modal-top {
   width: 600px;
   height: 480px;
-  padding: 40px 50px 40px 50px;
+  padding: 20px 30px 20px 30px;
 }
 
 .modal-heading {
@@ -167,7 +169,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  font-size: larger;
+  font-size: 23px;
   font-weight: bolder;
   font-family: Montserrat;
 }
@@ -190,7 +192,7 @@
   height: 35px;
   cursor: pointer;
   width: 38px;
-  margin-left: auto; /* Add this line to push the button to the right */
+  margin-left: auto;
 }
 .modal-dropdown {
   width: 100%;
@@ -216,7 +218,6 @@
   border-radius: 50%;
   background-color: #e0edff;
   display: flex;
-  /* text-align: center; */
   margin-left: 0px;
   cursor: pointer;
 }

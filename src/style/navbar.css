@@ -27,7 +27,7 @@
   margin-right: 10px;
   padding: 5px;
   width: 629px;
-  border: none; /* Remove the border */
+  border: none;
   outline: none;
   background-color: transparent;
   font-size: 15px;
@@ -38,10 +38,10 @@
   align-items: center;
 }
 .profile-icon {
-  width: 40px; /* Set the width and height for a decent-sized circle */
+  width: 40px;
   height: 40px;
-  border: none; /* Remove the border */
-  border-radius: 50%; /* Make it a circle */
+  border: none;
+  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -52,15 +52,15 @@
 .profile-image {
   width: 140%;
   height: 140%;
-  border-radius: 50%; /* Ensure the image is a circle */
-  object-fit: cover; /* Maintain aspect ratio and cover the circle */
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .notification-icon {
-  width: 40px; /* Set the width and height for a decent-sized circle */
+  width: 40px;
   height: 40px;
-  border: none; /* Remove the border */
-  border-radius: 50%; /* Make it a circle */
+  border: none;
+  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
