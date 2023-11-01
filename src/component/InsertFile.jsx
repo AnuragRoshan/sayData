@@ -24,7 +24,6 @@ const InsertFile = ({ name }) => {
   const [selectedFile, setSelectedFile] = useState(null);
   const [transcript, setTranscript] = useState(""); // Store the transcript result
   const [filesze, setfilesze] = useState(0);
-  const [externalLink, setExternalLink] = useState(""); // Store the URL input
 
   // Event handler to handle the change in the selected option
   const handleOptionChange = (event) => {
@@ -48,7 +47,6 @@ const InsertFile = ({ name }) => {
   const handleFileChange = (event) => {
     const file = event.target.files[0];
     setSelectedFile(file);
-    setExternalLink(""); // Reset the URL input
 
     if (file) {
       // Get the size of the file
@@ -65,19 +63,12 @@ const InsertFile = ({ name }) => {
       console.log("File Size (MB): " + fileSizeMB + " MB");
       setfilesze(fileSizeMB);
     }
+    //  };
   };
-
   const transcribeFile = async () => {
-    if (selectedFile) {
-      // Your transcription logic here
-      // ...
-    } else if (externalLink) {
-      // Your transcription logic for URL here
-      // ...
-    } else {
-      // Handle the case where no file or URL has been selected
-      console.log("Please select a file to transcribe or enter a URL.");
-    }
+    setTranscript(
+      "This Is Demo Transcript . Working api will integrated soon ... Wait a while "
+    );
   };
 
   return (
@@ -174,10 +165,7 @@ const InsertFile = ({ name }) => {
                   <input
                     className="modal-input-file"
                     type="url"
-                    value={externalLink}
-                    onChange={(e) => setExternalLink(e.target.value)}
                     placeholder="Paste a Google Drive or YouTube URL"
-                    disabled={!!selectedFile} // Disable the input if a file is selected
                   />
                   <button
                     className="button-transcribed insert-button"
@@ -190,7 +178,8 @@ const InsertFile = ({ name }) => {
               </div>
               {transcript && (
                 <div>
-                  <div>Transcript: {transcript}</div>
+                  <h1> Transcripted Text :</h1>
+                  <div>{transcript}</div>
                 </div>
               )}
             </div>
